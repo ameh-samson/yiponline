@@ -1,10 +1,9 @@
 a {
   text-decoration: none;
   color: inherit;
-}
 
-a,
-a:visited,
-a:active {
-  text-decoration: none;
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
 }
