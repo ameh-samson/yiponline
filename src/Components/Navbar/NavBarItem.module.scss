@@ -9,9 +9,10 @@
   border-radius: 5px;
   transition: background base.$btn-transition;
 
-  &:hover {
-    color: color.$bs-white;
-    background: color.$orange-gradient;
+  &:hover:not(:last-of-type) {
+    color: color.$bs-dark-blue;
+    padding-bottom: 1em;
+    border-bottom: 2px solid color.$bs-dark-blue;
   }
 
   &.joinUs {
