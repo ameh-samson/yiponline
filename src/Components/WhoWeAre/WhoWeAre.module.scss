@@ -26,7 +26,7 @@
   }
 
   .aboutUsCta {
-    background: color.$blue-gradient;
+    background: color.$gradient1;
     color: color.$bs-white;
     padding: 1em 0.8em;
     border-radius: 5px;
@@ -35,7 +35,7 @@
     display: inline-block;
 
     &:hover {
-      background: color.$orange-gradient;
+      background: color.$gradient2;
     }
   }
 }
