@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import missionImg from "../../assets/corporation.jpeg";
+import missionImg from "../../../assets/corporation.jpeg";
 
 const Mission = () => {
   return (

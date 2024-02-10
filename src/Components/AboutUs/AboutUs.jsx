@@ -1,6 +1,6 @@
-import Mission from "../Mission/Mission";
-import Vision from "../Vision/Vision";
-import WhoWeAre from "../WhoWeAre/WhoWeAre";
+import Mission from "./Mission/Mission";
+import Vision from "./Vision/Vision";
+import WhoWeAre from "./WhoWeAre/WhoWeAre";
 import styles from "./AboutUs.module.scss";
 
 const AboutUs = () => {
