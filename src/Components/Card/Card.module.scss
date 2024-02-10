@@ -1,0 +1,22 @@
+@use "../../SCSS/colors.scss" as color;
+
+.card {
+  background: color.$bs-white;
+  border-radius: 8px;
+  padding: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+
+  .cardContent {
+    h2 {
+      font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+      color: color.$bs-dark;
+      margin-block: 1em;
+    }
+
+    p {
+      font-size: clamp(0.6rem, 2vw + 0.6rem, 1.2rem);
+      color: color.$bs-medium-gray;
+    }
+  }
+}
