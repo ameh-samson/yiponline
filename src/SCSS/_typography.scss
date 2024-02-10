@@ -19,7 +19,8 @@ h2 {
   font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
 }
 
-p {
+p,
+span {
   font-size: 1rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
