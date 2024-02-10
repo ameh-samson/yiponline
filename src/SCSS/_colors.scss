@@ -1,10 +1,22 @@
 $bs-white: #fff;
 $bs-gray: #cbd5f1;
+$bs-dark-gray: #444444;
 $bs-blue: #0d6efd;
 $bs-dark-blue: #000851;
 $bs-dark: #212529;
+
 $bs-yellow: #ffc107;
 $bs-orange: #fd7e14;
+
+// gradient
+
+$blue-gradient: linear-gradient(
+  90deg,
+  rgba(28, 181, 224, 0.9) 0%,
+  rgba(0, 8, 81, 1) 100%
+);
+
+$orange-gradient: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
 
 // $bs-indigo: #6610f2;
 // $bs-purple: #6f42c1;

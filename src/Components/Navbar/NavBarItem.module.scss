@@ -1,0 +1,25 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.navLink {
+  font-size: 0.6rem;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  color: color.$bs-dark-gray;
+  border-radius: 5px;
+  transition: background base.$btn-transition;
+
+  &:hover {
+    color: color.$bs-white;
+    background: color.$orange-gradient;
+  }
+
+  &.joinUs {
+    background: color.$blue-gradient;
+    color: color.$bs-white;
+
+    &:hover {
+      background: color.$orange-gradient;
+    }
+  }
+}
