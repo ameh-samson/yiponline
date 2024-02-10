@@ -12,7 +12,7 @@
   }
 
   .title {
-    margin-block: 1em;
+    margin-block: 0.8em;
   }
 
   .content {
@@ -25,12 +25,11 @@
   .aboutUsCta {
     background: color.$blue-gradient;
     color: color.$bs-white;
-    padding: 0.5em 1em;
+    padding: 1em 0.8em;
     border-radius: 5px;
     transition: background base.$btn-transition;
     font-weight: 600;
     display: inline-block;
-    margin-top: 1em;
 
     &:hover {
       background: color.$orange-gradient;
