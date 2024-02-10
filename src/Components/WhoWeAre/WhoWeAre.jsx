@@ -2,7 +2,7 @@ import styles from "./WhoWeAre.module.scss";
 
 const WhoWeAre = () => {
   return (
-    <>
+    <div className={styles.whoWeAreContainer}>
       <span className={styles.intro}>Who we are</span>
       <h2 className={styles.title}>
         We Yeepsters make running a business a breeze by developing smart
@@ -17,7 +17,7 @@ const WhoWeAre = () => {
       <a href="" className={styles.aboutUsCta}>
         Find Out More{" "}
       </a>
-    </>
+    </div>
   );
 };
 

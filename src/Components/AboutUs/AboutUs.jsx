@@ -12,9 +12,7 @@ const AboutUs = () => {
           <Vision />
         </div>
 
-        <div className={styles.whoWeAreContainer}>
-          <WhoWeAre />
-        </div>
+        <WhoWeAre />
       </div>
     </section>
   );
