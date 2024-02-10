@@ -9,6 +9,9 @@
     color: color.$bs-medium-gray;
     text-transform: uppercase;
     font-weight: 700;
+    padding-bottom: 1em;
+    border-bottom: 2px solid color.$bs-dark-blue;
+    border-radius: 5px;
   }
 
   .title {
