@@ -14,7 +14,7 @@
 
   .heroContainer {
     padding-block: 5em 0;
-    max-width: 1200px;
+
     margin: 0 auto;
 
     .leftContainer {
@@ -65,5 +65,11 @@
   .heroContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .rightContainer {
+    margin-right: 3.6em;
   }
 }
