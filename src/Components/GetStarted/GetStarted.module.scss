@@ -6,18 +6,22 @@
   color: color.$bs-white;
   padding: 6em 2em;
 
-  .intro {
-    color: color.$bs-medium-gray;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 1em;
-    border-bottom: 3px solid rgb(181, 215, 92);
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 2em;
-  }
-
   .getStartedContainer {
+    .intro {
+      color: color.$bs-medium-gray;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding-bottom: 1em;
+      border-bottom: 3px solid rgb(181, 215, 92);
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 2em;
+    }
+
+    .title {
+      text-transform: uppercase;
+    }
+
     max-width: 1200px;
     margin: 0 auto;
 

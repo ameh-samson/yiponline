@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import AboutUs from "../AboutUs/AboutUs";
 import GetStarted from "../GetStarted/GetStarted";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
       <Hero />
       <AboutUs />
       <GetStarted />
+      <Footer />
     </div>
   );
 };
