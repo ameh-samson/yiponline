@@ -1,4 +1,13 @@
+@use "./colors" as color;
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(2.25rem, 5vw + 1rem, 4.5rem);
+  color: color.$bs-white;
+  line-height: 1.1;
 }

@@ -1,0 +1,65 @@
+@use "../../SCSS/colors.scss" as color;
+
+.heroSection {
+  background: linear-gradient(
+      90deg,
+      rgba(28, 181, 224, 0.9) 0%,
+      rgba(0, 8, 81, 1) 100%
+    ),
+    url("../../assets/macbook-computer.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .heroContainer {
+    padding-block: 5em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .leftContainer {
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .rightContainer {
+      padding: 5em 2em;
+      h1 {
+        text-transform: uppercase;
+      }
+
+      p {
+        color: color.$bs-gray;
+        font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+        margin-block: 2.5em;
+      }
+
+      .ctaBtn {
+        background: color.$bs-orange;
+        color: color.$bs-white;
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background: color.$bs-dark-blue;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .heroContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
