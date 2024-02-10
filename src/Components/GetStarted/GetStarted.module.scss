@@ -7,6 +7,17 @@
   padding: 6em 2em;
   margin-top: 5em;
 
+  .intro {
+    color: color.$bs-medium-gray;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1em;
+    border-bottom: 3px solid rgb(181, 215, 92);
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+
   .getStartedContainer {
     max-width: 1200px;
     margin: 0 auto;
