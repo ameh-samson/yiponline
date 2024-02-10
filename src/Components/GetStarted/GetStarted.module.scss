@@ -1,4 +1,5 @@
 @use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
 
 .getStarted {
   background: color.$bs-dark;
@@ -9,5 +10,23 @@
   .getStartedContainer {
     max-width: 1200px;
     margin: 0 auto;
+
+    div {
+      .ctaGetStarted {
+        color: color.$bs-white;
+        padding: 1em 0.8em;
+        border-radius: 5px;
+        border: 3px solid rgb(181, 215, 92);
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 2em;
+
+        &:hover {
+          background: color.$bs-white;
+          border: 3px solid color.$bs-white;
+          color: color.$bs-dark-blue;
+        }
+      }
+    }
   }
 }

@@ -12,7 +12,9 @@ const GetStarted = () => {
         </div>
 
         <div>
-          <a href="">Get Started Now</a>
+          <a className={styles.ctaGetStarted} href="">
+            Get Started Now
+          </a>
         </div>
       </div>
     </section>
