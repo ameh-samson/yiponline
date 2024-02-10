@@ -7,6 +7,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 250px;
 
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   .cardContent {
     h2 {
       font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
@@ -16,6 +28,7 @@
 
     p {
       font-size: clamp(0.6rem, 2vw + 0.6rem, 1.2rem);
+      font-weight: 500;
       color: color.$bs-medium-gray;
     }
   }
