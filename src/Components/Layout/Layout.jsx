@@ -4,6 +4,7 @@ import Hero from "../Hero/Hero";
 import AboutUs from "../AboutUs/AboutUs";
 import GetStarted from "../GetStarted/GetStarted";
 import Footer from "../Footer/Footer";
+import Services from "../Services/Services";
 
 const Layout = () => {
   return (
@@ -12,6 +13,7 @@ const Layout = () => {
       <Hero />
       <AboutUs />
       <GetStarted />
+      <Services />
       <Footer />
     </div>
   );
