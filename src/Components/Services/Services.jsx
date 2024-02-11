@@ -17,7 +17,7 @@ const Services = () => {
         </h2>
         <div className={styles.cardContainer}>
           <div>
-            <Card imageUrl={EcommerceImg} title="Mission" />
+            <Card imageUrl={EcommerceImg} title="E-commerce" />
           </div>
           <div>
             <Card imageUrl={HospitalityImg} title="Hospitality" />
