@@ -1,0 +1,6 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.footer {
+  background: color.$gradient1;
+}
