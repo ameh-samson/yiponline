@@ -15,9 +15,11 @@ const Hero = () => {
             quick-to-deploy technology, tools and apps for your SME and Large
             Enterprises!
           </p>
-          <a className={styles.ctaBtn} href="">
-            Get started now
-          </a>
+          <div>
+            <a className={styles.ctaBtn} href="">
+              Get started now
+            </a>
+          </div>
         </div>
       </div>
     </section>

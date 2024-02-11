@@ -14,9 +14,12 @@ const WhoWeAre = () => {
         so you can focus on the fun part of running your business. Let's work
         together to make your business soar!
       </p>
-      <a href="" className={styles.aboutUsCta}>
-        Find Out More{" "}
-      </a>
+
+      <div>
+        <a href="" className={styles.aboutUsCta}>
+          Find Out More{" "}
+        </a>
+      </div>
     </div>
   );
 };

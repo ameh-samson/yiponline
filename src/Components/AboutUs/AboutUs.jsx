@@ -11,8 +11,9 @@ const AboutUs = () => {
           <Mission />
           <Vision />
         </div>
-
-        <WhoWeAre />
+        <div>
+          <WhoWeAre />
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ const Card = ({ title, content, imageUrl }) => {
       <img src={imageUrl} alt="" />
       <div className={styles.cardContent}>
         <h2>{title}</h2>
-        <p>{content}</p>
+        {content ? <p>{content}</p> : ""}
       </div>
     </div>
   );

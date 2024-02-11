@@ -1,0 +1,52 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.solutionProvided {
+  background: url("../../assets/puzzle-and-dots.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding: 5em 2em;
+
+  .solutionProvidedContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .intro {
+      color: color.$bs-medium-gray;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding-bottom: 1em;
+      border-bottom: 3px solid color.$bs-dark-blue;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .title {
+      max-width: 1024px;
+      margin-block: 1.2em;
+    }
+
+    .cardContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+    }
+
+    .ctaContainer {
+      margin-top: 2em;
+      .solutionoProvidedCta {
+        background: color.$gradient1;
+        color: color.$bs-white;
+        padding: 1em 0.8em;
+        border-radius: 5px;
+        transition: background base.$btn-transition;
+        font-weight: 600;
+        display: inline-block;
+
+        &:hover {
+          background: color.$gradient2;
+        }
+      }
+    }
+  }
+}
