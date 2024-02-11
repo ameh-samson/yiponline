@@ -13,7 +13,7 @@ const Services = () => {
           <Card />
         </div>
 
-        <a href="" className={styles.aboutUsCta}>
+        <a href="" className={styles.solutionoProvidedCta}>
           Find Out More
         </a>
       </div>
