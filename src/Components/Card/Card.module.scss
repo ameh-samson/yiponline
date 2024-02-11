@@ -23,11 +23,12 @@
     h2 {
       font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
       color: color.$bs-dark;
-      margin-block: 1em;
+      margin-top: 1em;
       text-transform: capitalize;
     }
 
     p {
+      margin-top: 1em;
       font-weight: 500;
       color: color.$bs-medium-gray;
     }
