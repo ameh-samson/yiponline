@@ -1,5 +1,5 @@
-import Card from "../Card/Card";
-import visionImg from "../../../assets/interaction.jpeg";
+import Card from "../../Card/Card";
+import visionImg from "../../../assets/interaction.jpg";
 
 const Vision = () => {
   return (
