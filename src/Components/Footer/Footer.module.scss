@@ -1,7 +1,86 @@
 @use "../../SCSS/colors.scss" as color;
 @use "../../SCSS/base.scss" as base;
 
+$bs-light-blue: #a3b6e7;
+
 .footer {
-  background: color.$gradient1;
-  padding: 5em 1em;
+  background: color.$bs-dark-blue;
+  padding: 4em 1em;
+  color: color.$bs-white;
+
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 3em 2em;
+
+    padding: 2em;
+
+    h2 {
+      font-size: 0.8rem;
+      font-size: clamp(
+        0.8rem,
+        0.7100000000000001rem + 0.44999999999999996vw,
+        1.25rem
+      );
+      margin-bottom: 0.8em;
+      text-transform: uppercase;
+    }
+
+    p,
+    a {
+      font-size: 0.79rem;
+      font-weight: 500;
+      color: $bs-light-blue;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+
+    a {
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 1em;
+      transition: color base.$btn-transition;
+
+      &:hover {
+        color: color.$bs-white;
+      }
+    }
+
+    span {
+      font-size: 1rem;
+      font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  .hr {
+    max-width: 1200px;
+    border: none;
+    height: 0.5px;
+    background: $bs-light-blue;
+  }
+
+  .footerSubsetContainer {
+    max-width: 1200px;
+    margin: 3em auto 0;
+    display: flex;
+    justify-content: space-between;
+
+    .logoContainer {
+      height: 70px;
+      width: 100px;
+    }
+
+    .copyright {
+      font-size: 0.79rem;
+      font-weight: 500;
+      color: $bs-light-blue;
+    }
+  }
 }

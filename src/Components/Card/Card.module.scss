@@ -21,7 +21,8 @@
 
   .cardContent {
     h2 {
-      font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+      font-size: 1rem;
+      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
       color: color.$bs-dark;
       margin-top: 1em;
       text-transform: capitalize;
