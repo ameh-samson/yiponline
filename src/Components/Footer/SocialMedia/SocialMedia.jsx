@@ -12,18 +12,30 @@ const SocialMedia = () => {
     <>
       <h2>Social Media</h2>
       <div className={styles.socialMediaIconContainer}>
-        <a href="">
-          <FaFacebook className={styles.socialMediaIcon} />
-        </a>
-        <a href="">
-          <FaXTwitter className={styles.socialMediaIcon} />
-        </a>
-        <a href="">
-          <FaLinkedin className={styles.socialMediaIcon} />
-        </a>
-        <a href="">
-          <FaInstagram className={styles.socialMediaIcon} />
-        </a>
+        <div>
+          {" "}
+          <a href="">
+            <FaFacebook className={styles.socialMediaIcon} />
+          </a>
+        </div>
+        <div>
+          {" "}
+          <a href="">
+            <FaXTwitter className={styles.socialMediaIcon} />
+          </a>
+        </div>
+        <div>
+          {" "}
+          <a href="">
+            <FaLinkedin className={styles.socialMediaIcon} />
+          </a>
+        </div>
+        <div>
+          {" "}
+          <a href="">
+            <FaInstagram className={styles.socialMediaIcon} />
+          </a>
+        </div>
       </div>
     </>
   );

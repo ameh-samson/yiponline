@@ -2,8 +2,12 @@ const UsefulLinks = () => {
   return (
     <>
       <h2>Useful Links</h2>
-      <a href="">Products</a>
-      <a href="">Careers</a>
+      <div>
+        <a href="">Products</a>
+      </div>
+      <div>
+        <a href="">Careers</a>
+      </div>
     </>
   );
 };

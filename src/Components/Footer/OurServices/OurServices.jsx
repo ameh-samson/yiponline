@@ -2,9 +2,15 @@ const OurServices = () => {
   return (
     <>
       <h2>Our Services</h2>
-      <a href="">Powpa</a>
-      <a href="">Simpo</a>
-      <a href="">Software dev</a>
+      <div>
+        <a href="">Powpa</a>
+      </div>
+      <div>
+        <a href="">Simpo</a>
+      </div>
+      <div>
+        <a href="">Software dev</a>
+      </div>
     </>
   );
 };
