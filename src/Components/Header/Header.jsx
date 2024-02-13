@@ -11,7 +11,7 @@ const Header = () => {
           <img src={yipOnlineLogo} alt="" />
         </div>
         <button className={styles.menu}>
-          <FaBars />
+          <FaBars className={styles.menuIcon} />
         </button>
         <NavBar />
       </div>

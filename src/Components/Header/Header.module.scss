@@ -22,12 +22,27 @@
     }
     .menu {
       font-size: 1.2rem;
+      background: color.$bs-dark-blue;
+      color: color.$bs-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3em;
+      border-radius: 3px;
+
+      &:hover {
+        background: color.$bs-blue;
+      }
     }
   }
 }
 
 @media (min-width: 760px) {
-  .menu {
-    display: none;
+  .header {
+    .headerContainer {
+      .menu {
+        display: none;
+      }
+    }
   }
 }
