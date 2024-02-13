@@ -15,7 +15,7 @@ $bs-light-blue: #a3b6e7;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 3em 2em;
 
-    padding: 2em;
+    padding-block: 2em;
 
     h2 {
       font-size: 0.8rem;
@@ -71,6 +71,9 @@ $bs-light-blue: #a3b6e7;
     margin: 3em auto 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
 
     .logoContainer {
       height: 70px;
