@@ -3,6 +3,7 @@ import NavBar from "./Navbar/NavBar";
 import yipOnlineLogo from "../../assets/yip-online-logo.png";
 import styles from "./Header.module.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
-          <img src={yipOnlineLogo} alt="" />
+          <Link to="/">
+            <img src={yipOnlineLogo} alt="" />
+          </Link>
         </div>
         <div>
           <button className={styles.menu} onClick={toggleMenu}>
