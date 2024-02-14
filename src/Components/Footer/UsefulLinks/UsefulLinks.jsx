@@ -5,9 +5,7 @@ const UsefulLinks = () => {
     <>
       <h2>Useful Links</h2>
       <div>
-        <Link to="products" href="">
-          Products
-        </Link>
+        <Link to="products">Products</Link>
       </div>
       <div>
         <Link to="career">Careers</Link>
