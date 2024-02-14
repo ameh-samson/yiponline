@@ -26,6 +26,15 @@
       margin-block: 1.2em;
     }
 
+    .intro,
+    .title {
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
+      }
+    }
+
     .cardContainer {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,6 +54,14 @@
 
         &:hover {
           background: color.$gradient2;
+        }
+      }
+
+      .solutionoProvidedCta {
+        @extend .container;
+
+        &.appear {
+          @extend .appear;
         }
       }
     }
