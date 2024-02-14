@@ -10,9 +10,15 @@
     background: color.$gradient1;
     padding: 10em 1em 5em;
 
-    h1 {
+    .productTitle {
       max-width: 1200px;
       margin: 0 auto;
+
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
+      }
     }
   }
 
@@ -20,6 +26,12 @@
     padding-inline: 1em;
     max-width: 1200px;
     margin: 2em auto;
+
+    @extend .container;
+
+    &.appear {
+      @extend .appear;
+    }
 
     span {
       color: color.$bs-medium-gray;
@@ -42,7 +54,7 @@
     background: url("../../assets/puzzle-and-dots.png");
     background-position: top right;
     background-repeat: no-repeat;
-    padding: 3em 1em;
+    padding: 2em 1em;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;

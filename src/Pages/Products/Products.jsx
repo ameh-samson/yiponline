@@ -3,16 +3,36 @@ import styles from "./Products.module.scss";
 import Powpa from "./ProductsList/Powpa/Powpa";
 import Simpoo from "./ProductsList/Simpoo/Simpoo";
 import CustomSoftwareDev from "./ProductsList/CustomSoftwareDev/CustomSoftwareDev";
+import { useInView } from "react-intersection-observer";
 
 const Products = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
     <section className={styles.products}>
       <div className={styles.productsContainer}>
         <div className={styles.productsTitleContainer}>
-          <h1>Features</h1>
+          <h1
+            ref={ref}
+            className={`${styles.productTitle}  ${inView ? styles.appear : ""}`}
+          >
+            Features
+          </h1>
         </div>
 
-        <div className={styles.productContent}>
+        <div
+          ref={ref2}
+          className={`${styles.productContent}  ${
+            inView2 ? styles.appear : ""
+          }`}
+        >
           <span>Our Products & Services</span>
           <h2>World-class, bottom-line friendly solutions for your business</h2>
           <p>
