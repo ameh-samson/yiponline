@@ -1,9 +1,9 @@
-import React from "react";
+import styles from "./ProductsCard.module.scss";
 import { Link } from "react-router-dom";
 
 const ProductsCard = ({ title, content, url }) => {
   return (
-    <div>
+    <div className={styles.card}>
       <h2>{title}</h2>
       <p>{content}</p>
 
