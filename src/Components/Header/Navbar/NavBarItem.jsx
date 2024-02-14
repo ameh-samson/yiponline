@@ -10,22 +10,22 @@ const NavBarItem = ({ menuOpen }) => {
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="products" onClick={menuOpen}>
+        <Link to="/products" onClick={menuOpen}>
           Products
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="career" onClick={menuOpen}>
+        <Link to="/career" onClick={menuOpen}>
           Careers
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="contact" onClick={menuOpen}>
+        <Link to="/contact" onClick={menuOpen}>
           Contact Us
         </Link>
       </li>
       <li className={`${styles.navLink} ${styles.joinUs}`}>
-        <Link to="signup" onClick={menuOpen}>
+        <Link to="/signup" onClick={menuOpen}>
           Join Us
         </Link>
       </li>
