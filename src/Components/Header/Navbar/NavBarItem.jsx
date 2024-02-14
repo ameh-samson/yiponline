@@ -10,9 +10,7 @@ const NavBarItem = ({ menuOpen }) => {
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="/products" onClick={menuOpen}>
-          Products
-        </Link>
+        <Link to="/products">Products</Link>
       </li>
       <li className={styles.navLink}>
         <Link to="/career" onClick={menuOpen}>
