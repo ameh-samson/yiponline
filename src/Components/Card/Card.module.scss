@@ -28,8 +28,8 @@
 
   .cardContent {
     h2 {
-      font-size: 1rem;
-      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+      font-size: 1.2rem;
+      font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
       color: color.$bs-dark;
       margin-top: 1em;
       text-transform: capitalize;
