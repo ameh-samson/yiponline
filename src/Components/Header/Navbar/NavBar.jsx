@@ -7,7 +7,7 @@ const NavBar = ({ menuOpen }) => {
   return (
     <nav className={navClass}>
       <ul>
-        <NavBarItem />
+        <NavBarItem menuOpen={menuOpen} />
       </ul>
     </nav>
   );

@@ -1,22 +1,33 @@
 import styles from "./NavBarItem.module.scss";
+import { Link } from "react-router-dom";
 
-const NavBarItem = () => {
+const NavBarItem = ({ menuOpen }) => {
   return (
     <>
       <li className={styles.navLink}>
-        <a href="">Home </a>
+        <Link to="/" onClick={menuOpen}>
+          Home
+        </Link>
       </li>
       <li className={styles.navLink}>
-        <a href="">Products</a>
+        <Link to="products" onClick={menuOpen}>
+          Products
+        </Link>
       </li>
       <li className={styles.navLink}>
-        <a href="">Careers </a>
+        <Link to="career" onClick={menuOpen}>
+          Careers
+        </Link>
       </li>
       <li className={styles.navLink}>
-        <a href="">Contact Us</a>
+        <Link to="contact" onClick={menuOpen}>
+          Contact Us
+        </Link>
       </li>
       <li className={`${styles.navLink} ${styles.joinUs}`}>
-        <a href="">Join Us </a>
+        <Link to="signup" onClick={menuOpen}>
+          Join Us
+        </Link>
       </li>
     </>
   );
