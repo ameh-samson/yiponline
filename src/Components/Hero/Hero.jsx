@@ -34,7 +34,11 @@ const Hero = () => {
             Enterprises!
           </p>
           <div>
-            <a className={styles.ctaBtn} href="">
+            <a
+              ref={ref2}
+              className={`${styles.ctaBtn} ${inView2 ? styles.appear : ""}`}
+              href=""
+            >
               Get started now
             </a>
           </div>
