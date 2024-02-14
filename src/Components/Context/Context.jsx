@@ -7,7 +7,12 @@ const AppProvider = ({ children }) => {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  const contextValues = { isMenuOpen, toggleMenu };
+  const handleLinkClick = () => {
+    setMenuOpen();
+  };
+
+  const contextValues = { isMenuOpen, toggleMenu, handleLinkClick };
+
   return (
     <AppContext.Provider value={contextValues}>{children}</AppContext.Provider>
   );

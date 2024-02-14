@@ -1,10 +1,9 @@
+import { useGlobalContext } from "../../Context/Context";
 import styles from "./NavBarItem.module.scss";
 import { Link } from "react-router-dom";
 
-const NavBarItem = ({ menuOpen }) => {
-  const handleLinkClick = () => {
-    menuOpen();
-  };
+const NavBarItem = () => {
+  const { handleLinkClick } = useGlobalContext();
 
   return (
     <>
