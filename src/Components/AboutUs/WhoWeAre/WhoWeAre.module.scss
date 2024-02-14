@@ -38,4 +38,15 @@
       background: color.$gradient2;
     }
   }
+
+  .intro,
+  .title,
+  .content,
+  .aboutUsCta {
+    @extend .container;
+
+    &.appear {
+      @extend .appear;
+    }
+  }
 }
