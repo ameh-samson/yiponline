@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 const UsefulLinks = () => {
   return (
     <>
       <h2>Useful Links</h2>
       <div>
-        <a href="">Products</a>
+        <Link to="products" href="">
+          Products
+        </Link>
       </div>
       <div>
-        <a href="">Careers</a>
+        <Link to="career">Careers</Link>
       </div>
     </>
   );
