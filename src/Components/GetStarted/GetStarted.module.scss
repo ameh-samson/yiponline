@@ -42,5 +42,15 @@
         }
       }
     }
+
+    .intro,
+    .title,
+    .ctaGetStarted {
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
+      }
+    }
   }
 }
