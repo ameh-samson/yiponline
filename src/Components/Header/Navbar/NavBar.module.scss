@@ -1,15 +1,38 @@
-.nav {
-  display: none;
+@use "../../../SCSS/colors" as color;
+
+.navContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: color.$bs-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navOpen {
+  transform: translateY(0);
 }
 
 @media (min-width: 760px) {
-  .nav {
-    display: block;
+  .navContainer {
+    transform: translateX(0);
+    width: unset;
+    background: none;
+    padding: 0;
+    position: unset;
+    height: unset;
 
     ul {
       display: flex;
       align-items: center;
-      gap: 1em;
+      justify-content: center;
+      gap: 2em;
     }
   }
 }
