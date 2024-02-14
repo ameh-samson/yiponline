@@ -1,4 +1,3 @@
-import ProductsCard from "./ProductsCard/ProductsCard";
 import styles from "./Products.module.scss";
 import Powpa from "./ProductsList/Powpa/Powpa";
 import Simpoo from "./ProductsList/Simpoo/Simpoo";

@@ -1,7 +1,7 @@
 import styles from "./Card.module.scss";
 import { useInView } from "react-intersection-observer";
 
-const Card = ({ title, content, imageUrl }) => {
+const Card = ({ title, content, imageUrl, linkUrl }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -14,6 +14,14 @@ const Card = ({ title, content, imageUrl }) => {
         <h2>{title}</h2>
         {content ? <p>{content}</p> : ""}
       </div>
+
+      {linkUrl ? (
+        <div>
+          <a href={linkUrl}>Visit +</a>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
