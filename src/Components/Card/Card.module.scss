@@ -1,4 +1,5 @@
 @use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
 
 .card {
   background: color.$bs-white;
@@ -6,6 +7,12 @@
   padding: 1.2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 250px;
+
+  @extend .container;
+
+  &.appear {
+    @extend .appear;
+  }
 
   img {
     height: 100%;

@@ -16,3 +16,22 @@ body {
 // button transition
 
 $btn-transition: 0.3s ease-in-out;
+
+// trasition
+
+$transition-duration: 0.5s;
+$transition-timing-function: ease-in-out;
+
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity $transition-duration $transition-timing-function,
+    transform $transition-duration $transition-timing-function;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity $transition-duration $transition-timing-function,
+    transform $transition-duration $transition-timing-function;
+}

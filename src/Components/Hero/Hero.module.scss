@@ -14,8 +14,16 @@
 
   .heroContainer {
     padding-block: 5em 0;
-
     margin: 0 auto;
+
+    .leftContainer,
+    .rightContainer {
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
+      }
+    }
 
     .leftContainer {
       overflow: hidden;
