@@ -2,28 +2,34 @@ import styles from "./NavBarItem.module.scss";
 import { Link } from "react-router-dom";
 
 const NavBarItem = ({ menuOpen }) => {
+  const handleLinkClick = () => {
+    menuOpen();
+  };
+
   return (
     <>
       <li className={styles.navLink}>
-        <Link to="/" onClick={menuOpen}>
+        <Link to="/" onClick={handleLinkClick}>
           Home
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="/products">Products</Link>
+        <Link to="/products" onClick={handleLinkClick}>
+          Products
+        </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="/career" onClick={menuOpen}>
+        <Link to="/career" onClick={handleLinkClick}>
           Careers
         </Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="/contact" onClick={menuOpen}>
+        <Link to="/contact" onClick={handleLinkClick}>
           Contact Us
         </Link>
       </li>
       <li className={`${styles.navLink} ${styles.joinUs}`}>
-        <Link to="/signup" onClick={menuOpen}>
+        <Link to="/signup" onClick={handleLinkClick}>
           Join Us
         </Link>
       </li>

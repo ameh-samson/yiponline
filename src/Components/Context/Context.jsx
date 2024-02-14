@@ -1,9 +1,13 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const contextValues = {};
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+  const contextValues = { isMenuOpen, toggleMenu };
   return (
     <AppContext.Provider value={contextValues}>{children}</AppContext.Provider>
   );
