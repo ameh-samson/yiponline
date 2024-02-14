@@ -23,7 +23,7 @@
     .menu {
       position: relative;
       font-size: 1.2rem;
-      background: color.$bs-dark-blue;
+      background: color.$bs-blue;
       color: color.$bs-white;
       display: flex;
       align-items: center;
@@ -33,7 +33,7 @@
       z-index: 2;
 
       &:hover {
-        background: color.$bs-blue;
+        background: color.$bs-dark-blue;
       }
     }
   }
