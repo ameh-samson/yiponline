@@ -6,14 +6,15 @@ import GetStarted from "../GetStarted/GetStarted";
 import Footer from "../Footer/Footer";
 import Services from "../Services/Services";
 
+import { Outlet } from "react-router-dom";
+
 const Layout = () => {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <Hero />
-      <AboutUs />
-      <GetStarted />
-      <Services />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
