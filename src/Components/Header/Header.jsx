@@ -20,7 +20,7 @@ const Header = () => {
           <button className={styles.menu} onClick={toggleMenu}>
             <FaBars className={styles.menuIcon} />
           </button>
-          <NavBar />
+          <NavBar menuOpen={isMenuOpen} />
         </div>
       </div>
     </header>
