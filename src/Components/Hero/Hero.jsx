@@ -1,21 +1,31 @@
 import styles from "./Hero.module.scss";
 import HeroImg from "../../assets/lady-smiling.jpg";
 import { useGlobalContext } from "../Context/Context";
+import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
-  const { ref, inView } = useGlobalContext();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
         <div
+          ref={ref}
           className={`${styles.leftContainer} ${inView ? styles.appear : ""}`}
         >
           <img src={HeroImg} alt="" />
         </div>
         <div
-          ref={ref}
-          className={`${styles.rightContainer} ${inView ? styles.appear : ""}`}
+          ref={ref2}
+          className={`${styles.rightContainer} ${inView2 ? styles.appear : ""}`}
         >
           <h1>Does your business need to grow?</h1>
           <p>
