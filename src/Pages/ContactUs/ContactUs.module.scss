@@ -1,0 +1,42 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.contactUs {
+  padding: 5em 0 5em;
+
+  .contactUsContainer {
+    .contactUsTitleContainer {
+      background: color.$gradient1;
+      padding: 5em 1em;
+
+      h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+
+    .contactUsContentContainer {
+      background: url("../../assets/puzzle-and-dots.png");
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      padding-inline: 1em;
+    }
+
+    .ContactUsContent {
+      padding-inline: 1em;
+      max-width: 1200px;
+      margin: 2em auto;
+
+      h2 {
+        margin-bottom: 1em;
+      }
+
+      p {
+        color: color.$bs-medium-gray;
+      }
+    }
+
+    .contactDetailsGrid {
+    }
+  }
+}
