@@ -23,9 +23,9 @@ const CareerCard = ({
           <h3 onClick={handleClick}>{title}</h3>
           {cardState.detailsVisible && (
             <>
-              <p>{intro}</p>
+              <p onClick={handleClick}>{intro}</p>
               <span>LOCATION: {location}</span>
-              <p>
+              <p onClick={handleClick}>
                 <span>QUALIFICATION:</span>
                 {qualification}
               </p>
