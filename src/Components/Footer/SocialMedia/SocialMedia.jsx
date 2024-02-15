@@ -20,13 +20,13 @@ const SocialMedia = () => {
         </div>
         <div>
           {" "}
-          <a href="">
+          <a href="https://twitter.com/yiponline_">
             <FaXTwitter className={styles.socialMediaIcon} />
           </a>
         </div>
         <div>
           {" "}
-          <a href="">
+          <a href="https://www.linkedin.com/company/yiponline">
             <FaLinkedin className={styles.socialMediaIcon} />
           </a>
         </div>

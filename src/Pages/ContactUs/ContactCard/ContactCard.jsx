@@ -11,7 +11,9 @@ const ContactCard = ({ link, icon, title, details, contactInfo }) => {
         {Array.isArray(contactInfo) ? (
           <ul>
             {contactInfo.map((info, index) => (
-              <li key={index}>{info}</li>
+              <li key={index}>
+                <a href="">{info}</a>
+              </li>
             ))}
           </ul>
         ) : (
