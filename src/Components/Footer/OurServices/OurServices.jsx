@@ -3,13 +3,13 @@ const OurServices = () => {
     <>
       <h2>Our Services</h2>
       <div>
-        <a href="">Powpa</a>
+        <a href="https://powpa.com/">Powpa</a>
       </div>
       <div>
-        <a href="">Simpo</a>
+        <a href="https://simpoo.com/">Simpo</a>
       </div>
       <div>
-        <a href="">Software dev</a>
+        <a href="#">Software dev</a>
       </div>
     </>
   );
