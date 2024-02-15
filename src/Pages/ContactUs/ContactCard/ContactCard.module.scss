@@ -1,0 +1,42 @@
+@use "../../../SCSS/colors.scss" as color;
+@use "../../../SCSS/base.scss" as base;
+
+.card {
+  background: color.$bs-white;
+  border-radius: 8px;
+  padding: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+
+  .cardContainer {
+    padding: 2em;
+    transition: transform 0.3s ease-in-out;
+    .icon {
+      font-size: 2rem;
+    }
+
+    .title {
+      margin-top: 1em;
+    }
+
+    .details {
+      display: inline-block;
+      margin-top: 1em;
+      font-weight: 600;
+      color: color.$bs-medium-gray;
+    }
+
+    ul,
+    p {
+      margin-top: 0.8em;
+      color: color.$bs-purple;
+      font-weight: 700;
+      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -15,13 +15,6 @@
       }
     }
 
-    .contactUsContentContainer {
-      background: url("../../assets/puzzle-and-dots.png");
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      padding-inline: 1em;
-    }
-
     .ContactUsContent {
       padding-inline: 1em;
       max-width: 1200px;
@@ -37,6 +30,16 @@
     }
 
     .contactDetailsGrid {
+      background: url("../../assets/puzzle-and-dots.png");
+      background-position: top right;
+      background-repeat: no-repeat;
+      padding: 2em 1em;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1em 2em;
     }
   }
 }

@@ -1,3 +1,4 @@
+import Call from "./Call/Call";
 import styles from "./ContactUs.module.scss";
 import Whatsapp from "./Whatsapp/Whatsapp";
 
@@ -15,7 +16,12 @@ const ContactUs = () => {
         </div>
 
         <div className={styles.contactDetailsGrid}>
-          <Whatsapp />
+          <div>
+            <Whatsapp />
+          </div>
+          <div>
+            <Call />
+          </div>
         </div>
 
         <div className={styles.sendUsAmessageContainer}></div>
