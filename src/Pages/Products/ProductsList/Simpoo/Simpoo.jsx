@@ -9,7 +9,7 @@ const Simpoo = () => {
         title="Simpo"
         content="Simpoo effortlessly keeps track of financial transactions, handles billing for clients, and facilitates online payments. 
         Every business needs to make bookkeeping Simpoo!"
-        linkUrl="#"
+        linkUrl="https://simpoo.com/"
       />
     </>
   );

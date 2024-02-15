@@ -1,64 +1,67 @@
 @use "../../SCSS/colors.scss" as color;
 @use "../../SCSS/base.scss" as base;
 
-.productsContainer {
-  background: url("../../assets/puzzle-and-dots.png");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+.products {
+  padding: 5em 0 5em;
+  .productsContainer {
+    background: url("../../assets/puzzle-and-dots.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
 
-  .productsTitleContainer {
-    background: color.$gradient1;
-    padding: 10em 1em 5em;
+    .productsTitleContainer {
+      background: color.$gradient1;
+      padding: 5em 1em;
 
-    .productTitle {
+      .productTitle {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @extend .container;
+
+        &.appear {
+          @extend .appear;
+        }
+      }
+    }
+
+    .productContent {
+      padding-inline: 1em;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 2em auto;
 
       @extend .container;
 
       &.appear {
         @extend .appear;
       }
-    }
-  }
 
-  .productContent {
-    padding-inline: 1em;
-    max-width: 1200px;
-    margin: 2em auto;
+      span {
+        color: color.$bs-medium-gray;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 1em;
+        display: inline-block;
+      }
 
-    @extend .container;
+      h2 {
+        margin-bottom: 1em;
+      }
 
-    &.appear {
-      @extend .appear;
-    }
-
-    span {
-      color: color.$bs-medium-gray;
-      text-transform: capitalize;
-      font-weight: 700;
-      margin-bottom: 1em;
-      display: inline-block;
+      p {
+        color: color.$bs-medium-gray;
+      }
     }
 
-    h2 {
-      margin-bottom: 1em;
+    .productGrid {
+      background: url("../../assets/puzzle-and-dots.png");
+      background-position: top right;
+      background-repeat: no-repeat;
+      padding: 2em 1em;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em 5em;
     }
-
-    p {
-      color: color.$bs-medium-gray;
-    }
-  }
-
-  .productGrid {
-    background: url("../../assets/puzzle-and-dots.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    padding: 2em 1em;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em 5em;
   }
 }
