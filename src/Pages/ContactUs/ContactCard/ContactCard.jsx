@@ -18,7 +18,7 @@ const ContactCard = ({ link, icon, title, details, contactInfo }) => {
           <ul>
             {contactInfo.map((info, index) => (
               <li key={index}>
-                <a href="">{info}</a>
+                <a href={`tel:${info}`}>{info}</a>
               </li>
             ))}
           </ul>
