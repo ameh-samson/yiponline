@@ -18,15 +18,12 @@ const Hero = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
-        <div
-          ref={ref}
-          className={`${styles.leftContainer} ${inView ? styles.appear : ""}`}
-        >
+        <div className={styles.leftContainer}>
           <img src={HeroImg} alt="" />
         </div>
         <div
-          ref={ref2}
-          className={`${styles.rightContainer} ${inView2 ? styles.appear : ""}`}
+          ref={ref}
+          className={`${styles.rightContainer} ${inView ? styles.appear : ""}`}
         >
           <h1>Does your business need to grow?</h1>
           <p>
