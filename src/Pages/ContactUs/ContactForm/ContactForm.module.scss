@@ -1,0 +1,68 @@
+@use "../../../SCSS/colors.scss" as color;
+@use "../../../SCSS/base.scss" as base;
+
+.contactFormCard {
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: color.$bs-white;
+  border-radius: 8px;
+  padding: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  p {
+    margin-top: 0.8em;
+    color: color.$bs-purple;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+  }
+
+  form {
+    .formGroup {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        margin-block: 0.8em;
+        font-weight: 600;
+        color: color.$bs-medium-gray;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-block: 0.5em;
+        padding: 0.6em;
+        margin-bottom: 2em;
+        border: 2px solid color.$bs-blue;
+        border-radius: 5px;
+
+        &:focus {
+          outline: none;
+          border: 2px solid color.$bs-medium-gray;
+        }
+      }
+
+      textarea {
+        resize: none;
+        min-height: 100px;
+      }
+    }
+  }
+
+  button {
+    padding: 0.8em;
+    background: color.$bs-blue;
+    color: color.$bs-white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      background: color.$bs-dark-blue;
+    }
+  }
+}

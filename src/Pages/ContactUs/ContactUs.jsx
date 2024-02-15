@@ -1,4 +1,5 @@
 import Call from "./Call/Call";
+import ContactForm from "./ContactForm/ContactForm";
 import styles from "./ContactUs.module.scss";
 import Whatsapp from "./Whatsapp/Whatsapp";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +43,9 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className={styles.sendUsAmessageContainer}></div>
+        <div className={styles.sendUsAmessageContainer}>
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

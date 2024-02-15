@@ -53,5 +53,10 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1em 2em;
     }
+
+    .sendUsAmessageContainer {
+      padding-inline: 1em;
+      margin-top: 2em;
+    }
   }
 }
