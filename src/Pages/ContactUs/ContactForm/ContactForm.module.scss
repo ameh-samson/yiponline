@@ -10,6 +10,12 @@
   padding: 1.2em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+  @extend .container;
+
+  &.appear {
+    @extend .appear;
+  }
+
   p {
     margin-top: 0.8em;
     color: color.$bs-purple;

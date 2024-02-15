@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import styles from "./ContactForm.module.scss";
+import { useInView } from "react-intersection-observer";
 
 const ContactForm = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,7 +33,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.contactFormCard}>
+    <div
+      ref={ref}
+      className={`${styles.contactFormCard} ${inView ? styles.appear : ""}`}
+    >
       <h2>Send Us a Message</h2>
       <form onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
