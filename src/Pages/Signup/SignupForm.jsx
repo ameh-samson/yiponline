@@ -20,15 +20,11 @@ const SignupForm = () => {
 
   const toggleForm = () => {
     setIsRegistration(!isRegistration);
-    setFormData({
-      username: "",
-      password: "",
-      confirmPassword: "",
-    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("Login:", formData);
   };
 
   return (
