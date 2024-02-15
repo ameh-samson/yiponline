@@ -28,3 +28,14 @@ span {
 a {
   font-size: 1rem;
 }
+
+label,
+input {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input {
+  color: color.$bs-dark-gray;
+}

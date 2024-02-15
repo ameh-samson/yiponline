@@ -5,7 +5,7 @@ import Products from "./Pages/Products/Products";
 import Home from "./Pages/Home/Home";
 import Careers from "./Pages/Careers/Careers";
 import ContactUs from "./Pages/ContactUs/ContactUs";
-import SignUp from "./Pages/SignUp/SignUp";
+import SignupForm from "./Pages/Signup/SignupForm";
 import ScrollToTop from "./Components/Util/ScrollToTop";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/career" element={<Careers />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signup" element={<SignupForm />} />
           </Route>
         </Routes>
       </ScrollToTop>

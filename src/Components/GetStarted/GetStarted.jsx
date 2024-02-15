@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./GetStarted.module.scss";
 import { useInView } from "react-intersection-observer";
 
@@ -31,15 +32,15 @@ const GetStarted = () => {
         </div>
 
         <div>
-          <a
+          <Link
             ref={ref2}
             className={`${styles.ctaGetStarted} ${
               inView2 ? styles.appear : ""
             }`}
-            href=""
+            to="signup"
           >
             Get Started Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>

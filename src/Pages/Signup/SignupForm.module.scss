@@ -1,0 +1,53 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em 1em;
+
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: color.$bs-white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 1.5em;
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 500px;
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: color.$bs-white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background: color.$bs-dark-blue;
+      }
+    }
+
+    p {
+      margin-top: 1em;
+      font-weight: 500;
+      color: color.$bs-medium-gray;
+      font-size: 1rem;
+
+      .toggleLink {
+        font-size: 1rem;
+        color: color.$bs-blue;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          color: color.$bs-dark-blue;
+        }
+      }
+    }
+  }
+}

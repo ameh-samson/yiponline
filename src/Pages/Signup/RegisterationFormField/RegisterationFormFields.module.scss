@@ -1,0 +1,25 @@
+@use "../../../SCSS/colors.scss" as color;
+@use "../../../SCSS/base.scss" as base;
+
+.registerationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: color.$bs-medium-gray;
+
+  label {
+    margin-bottom: 0.8em;
+  }
+
+  input {
+    padding: 0.6em;
+    margin-bottom: 2em;
+    border: 2px solid color.$bs-blue;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid color.$bs-medium-gray;
+    }
+  }
+}

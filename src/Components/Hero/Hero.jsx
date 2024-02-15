@@ -2,6 +2,7 @@ import styles from "./Hero.module.scss";
 import HeroImg from "../../assets/lady-smiling.jpg";
 import { useGlobalContext } from "../Context/Context";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -34,13 +35,13 @@ const Hero = () => {
             Enterprises!
           </p>
           <div>
-            <a
+            <Link
               ref={ref2}
               className={`${styles.ctaBtn} ${inView2 ? styles.appear : ""}`}
-              href=""
+              to="signup"
             >
               Get started now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
