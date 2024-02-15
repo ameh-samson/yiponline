@@ -3,6 +3,16 @@ import LoginFormFields from "./LoginFormField/LoginFormFields";
 import RegistrationFormFields from "./RegisterationFormField/RegisterationFormFields";
 import styles from "./SignupForm.module.scss";
 
+const LoginForm = ({ formData, handleChange }) => {
+  return <LoginFormFields formData={formData} handleChange={handleChange} />;
+};
+
+const RegistrationForm = ({ formData, handleChange }) => {
+  return (
+    <RegistrationFormFields formData={formData} handleChange={handleChange} />
+  );
+};
+
 const SignupForm = () => {
   const [isRegistration, setIsRegistration] = useState(false);
   const [formData, setFormData] = useState({
@@ -24,21 +34,22 @@ const SignupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login:", formData);
+    console.log(isRegistration ? "Register:" : "Login:", formData);
+
+    setFormData({
+      username: "",
+      password: "",
+      confirmPassword: "",
+    });
   };
 
   return (
     <section className={styles.formContainer}>
       <form className={styles.signupForm} onSubmit={handleSubmit}>
         {isRegistration ? (
-          <RegistrationFormFields
-            formData={formData}
-            handleChange={handleChange}
-          />
+          <RegistrationForm formData={formData} handleChange={handleChange} />
         ) : (
-          <div>
-            <LoginFormFields formData={formData} handleChange={handleChange} />
-          </div>
+          <LoginForm formData={formData} handleChange={handleChange} />
         )}
 
         <button type="submit">{isRegistration ? "Register" : "Login"}</button>
