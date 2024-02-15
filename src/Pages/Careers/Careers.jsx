@@ -3,16 +3,35 @@ import teamImg from "../../assets/team.jpeg";
 import CareerCard from "./CareerList/CareerCard/CareerCard";
 import TechnicalProductOwner from "./CareerList/TechnicalProductOwner/TechnicalProductOwner";
 import BusineOperationsLead from "./CareerList/BusinessOperationsLead/BusineOperationsLead";
+import { useInView } from "react-intersection-observer";
 
 const Careers = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
     <section className={styles.career}>
       <div className={styles.careerContainer}>
         <div className={styles.careerTitleContainer}>
-          <h1 className={`${styles.productTitle} `}>Careers</h1>
+          <h1
+            ref={ref}
+            className={`${styles.productTitle} ${inView ? styles.appear : ""}`}
+          >
+            Careers
+          </h1>
         </div>
 
-        <div className={styles.careerContent}>
+        <div
+          ref={ref}
+          className={`${styles.careerContent}  ${inView ? styles.appear : ""}`}
+        >
           <span>Be part of our team</span>
           <h2>Joins Us In Your Greatest Professional Mission</h2>
           <p>
@@ -20,11 +39,20 @@ const Careers = () => {
             businesses!
           </p>
         </div>
-        <div>
+
+        <div
+          ref={ref2}
+          className={`${styles.careerImg} ${inView2 ? styles.appear : ""}`}
+        >
           <img src={teamImg} alt="" />
         </div>
 
-        <div className={styles.employeeCulture}>
+        <div
+          ref={ref2}
+          className={`${styles.employeeCulture} ${
+            inView2 ? styles.appear : ""
+          }`}
+        >
           <h2>Our Employee Culture</h2>
           <p>
             Integrity, Kindness, Curiosity & Excellence We make room for the

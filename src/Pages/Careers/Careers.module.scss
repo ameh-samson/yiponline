@@ -12,6 +12,22 @@
       h1 {
         max-width: 1200px;
         margin: 0 auto;
+
+        @extend .container;
+
+        &.appear {
+          @extend .appear;
+        }
+      }
+    }
+
+    .careerContent,
+    .employeeCulture,
+    .careerImg {
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
       }
     }
 
