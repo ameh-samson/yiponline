@@ -1,0 +1,29 @@
+@use "../../../../SCSS/colors.scss" as color;
+@use "../../../../SCSS/base.scss" as base;
+
+.cardContainer {
+  background: color.$bs-white;
+  border-radius: 8px;
+  padding: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+
+  .content {
+    h3 {
+      color: color.$bs-purple;
+      cursor: pointer;
+    }
+
+    p,
+    span {
+      text-align: justify;
+      margin-block: 1em;
+      color: color.$bs-medium-gray;
+    }
+
+    span {
+      display: block;
+      font-weight: 600;
+    }
+  }
+}
