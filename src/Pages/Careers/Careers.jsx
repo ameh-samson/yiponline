@@ -1,5 +1,7 @@
 import styles from "./Careers.module.scss";
 import teamImg from "../../assets/team.jpeg";
+import BusineOperationsLead from "./CareerList/BusinessOperationsLead/BusineOperationsLead";
+import TechnicalProductOwner from "./CareerList/TechnicalProductOwner/TechnicalProductOwner";
 
 const Careers = () => {
   return (
@@ -16,6 +18,11 @@ const Careers = () => {
             Building accessible tech to structure, automate & scale-up African
             businesses!
           </p>
+        </div>
+
+        <div className={styles.careerListContainer}>
+          <TechnicalProductOwner />
+          <BusineOperationsLead />
         </div>
 
         <div>
