@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const About = () => {
       </div>
 
       <div>
-        <a href="">Send a Message</a>
+        <Link to="contact">Send a Message</Link>
       </div>
     </>
   );
