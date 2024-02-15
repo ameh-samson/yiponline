@@ -12,8 +12,8 @@ const Careers = () => {
         </div>
 
         <div className={styles.careerContent}>
-          <span>Our Products & Services</span>
-          <h2>Be part of our team</h2>
+          <span>Be part of our team</span>
+          <h2>Joins Us In Your Greatest Professional Mission</h2>
           <p>
             Building accessible tech to structure, automate & scale-up African
             businesses!

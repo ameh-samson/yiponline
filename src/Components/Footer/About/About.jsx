@@ -5,7 +5,7 @@ const About = () => {
     <>
       <h2>About</h2>
       <div>
-        <a href="">About Us</a>
+        <a href="#">About Us</a>
       </div>
 
       <div>
