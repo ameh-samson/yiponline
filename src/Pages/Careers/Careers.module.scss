@@ -1,0 +1,55 @@
+@use "../../SCSS/colors.scss" as color;
+@use "../../SCSS/base.scss" as base;
+
+.career {
+  padding: 5em 0 2em;
+
+  .careerContainer {
+    .careerTitleContainer {
+      background: color.$gradient1;
+      padding: 5em 1em;
+
+      h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
+
+    .careerContent {
+      padding-inline: 1em;
+      max-width: 1200px;
+      margin: 2em auto;
+
+      span {
+        color: color.$bs-medium-gray;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 1em;
+        display: inline-block;
+      }
+
+      h2,
+      .employeeCulture {
+        margin-bottom: 1em;
+      }
+
+      p {
+        color: color.$bs-medium-gray;
+      }
+    }
+
+    .employeeCulture {
+      padding-inline: 1em;
+      max-width: 1200px;
+      margin: 2em auto;
+
+      h2 {
+        margin-bottom: 1em;
+      }
+
+      p {
+        color: color.$bs-medium-gray;
+      }
+    }
+  }
+}
