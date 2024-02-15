@@ -1,7 +1,8 @@
 import styles from "./Careers.module.scss";
 import teamImg from "../../assets/team.jpeg";
-import BusineOperationsLead from "./CareerList/BusinessOperationsLead/BusineOperationsLead";
+import CareerCard from "./CareerList/CareerCard/CareerCard";
 import TechnicalProductOwner from "./CareerList/TechnicalProductOwner/TechnicalProductOwner";
+import BusineOperationsLead from "./CareerList/BusinessOperationsLead/BusineOperationsLead";
 
 const Careers = () => {
   return (
