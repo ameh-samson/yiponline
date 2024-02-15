@@ -1,8 +1,14 @@
 import styles from "./ContactCard.module.scss";
+import { useInView } from "react-intersection-observer";
 
 const ContactCard = ({ link, icon, title, details, contactInfo }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
-    <div className={styles.card}>
+    <div ref={ref} className={`${styles.card} ${inView ? styles.appear : ""}`}>
       <div className={styles.cardContainer}>
         {icon && <span className={styles.icon}>{icon}</span>}
         <h2 className={styles.title}>{title}</h2>

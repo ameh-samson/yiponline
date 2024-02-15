@@ -8,6 +8,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 250px;
 
+  @extend .container;
+
+  &.appear {
+    @extend .appear;
+  }
+
   .cardContainer {
     padding: 2em;
     transition: transform 0.3s ease-in-out;

@@ -12,6 +12,12 @@
       h1 {
         max-width: 1200px;
         margin: 0 auto;
+
+        @extend .container;
+
+        &.appear {
+          @extend .appear;
+        }
       }
     }
 
@@ -19,6 +25,12 @@
       padding-inline: 1em;
       max-width: 1200px;
       margin: 2em auto;
+
+      @extend .container;
+
+      &.appear {
+        @extend .appear;
+      }
 
       h2 {
         margin-bottom: 1em;

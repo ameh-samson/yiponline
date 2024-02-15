@@ -1,16 +1,34 @@
 import Call from "./Call/Call";
 import styles from "./ContactUs.module.scss";
 import Whatsapp from "./Whatsapp/Whatsapp";
+import { useInView } from "react-intersection-observer";
 
 const ContactUs = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
     <section className={styles.contactUs}>
       <div className={styles.contactUsContainer}>
         <div className={styles.contactUsTitleContainer}>
-          <h1>Support</h1>
+          <h1 ref={ref} className={`${inView ? styles.appear : ""}`}>
+            Support
+          </h1>
         </div>
 
-        <div className={styles.ContactUsContent}>
+        <div
+          ref={ref2}
+          className={`${styles.ContactUsContent} ${
+            inView2 ? styles.appear : ""
+          }`}
+        >
           <h2>Curious About our Products?</h2>
           <p>YIP is ready and able to make magic for your business.</p>
         </div>
