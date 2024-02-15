@@ -20,12 +20,6 @@ const Careers = () => {
             businesses!
           </p>
         </div>
-
-        <div className={styles.careerListContainer}>
-          <TechnicalProductOwner />
-          <BusineOperationsLead />
-        </div>
-
         <div>
           <img src={teamImg} alt="" />
         </div>
@@ -36,6 +30,15 @@ const Careers = () => {
             Integrity, Kindness, Curiosity & Excellence We make room for the
             best talent! Check us out!
           </p>
+        </div>
+
+        <div className={styles.careerListContainer}>
+          <div>
+            <TechnicalProductOwner />
+          </div>
+          <div>
+            <BusineOperationsLead />
+          </div>
         </div>
       </div>
     </section>

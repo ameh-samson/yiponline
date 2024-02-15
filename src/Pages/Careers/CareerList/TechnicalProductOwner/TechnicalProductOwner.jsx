@@ -2,6 +2,7 @@ import CareerCard from "../CareerCard/CareerCard";
 
 const TechnicalProductOwner = () => {
   const careerData = {
+    id: "uniqueId2",
     title: "Technical Product Owner",
     intro:
       "The best candidate will most likely be a principled & curious people-oriented problem solver who possesses: Market Understanding -Be very good at prioritizing based on data and market intelligence Product Vision - Must optimize features to ensure the product solves the customers pain point People Skills - Must know how to negotiate with teams to get desired results. Experience as a Product Owner in a software as a service or e-commerce company",
@@ -13,6 +14,7 @@ const TechnicalProductOwner = () => {
   return (
     <div>
       <CareerCard
+        id={careerData.id}
         title={careerData.title}
         intro={careerData.intro}
         location={careerData.location}
